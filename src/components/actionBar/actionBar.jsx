@@ -7,6 +7,7 @@ function ActionBar({onRefresh, onShowAll, onRegionSelect})
             <button onClick={() => onShowAll(true)}>Show all</button>
             <br />
             <select onChange={(e) => onRegionSelect(e.target.value)}>
+                <option value="all">All</option>
                 <option value="england-and-wales">England and Wales</option>
                 <option value="scotland">Scotland</option>
                 <option value="northern-ireland">Northern Ireland</option>
